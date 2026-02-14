@@ -1,38 +1,141 @@
-.App {
+:root {
+  --teal: #18837E;
+  --razzmatazz: #DB3069;
+  --yale-blue: #004975;
+  --amethyst: #9882AC;
+  --white-smoke: #F2F2F2;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--teal);
+  color: var(--white-smoke);
+  height: 100%;
+  margin: 0;
+}
+
+
+/* NavBar Section*/
+
+.navbar {
+  background-color: var(--white-smoke);
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 15px 40px;
+}
+
+.tabCont a {
+  color: white;
+  background-color: var(--yale-blue);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 30px;
+  transition: 0.3s ease;
+}
+
+.tabCont a:hover {
+  color: var(--razzmatazz);
+}
+
+h1, h2, h3 {
+  color: var(--teal);
+}
+
+/* About us */
+
+.abt h1{
+  color: var(--yale-blue);
+  text-align: center;
+}
+.abt p {
+  margin: 15px;
+  color: var(--white-smoke);
+  font-weight:500;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cnt{
+display: flex;
+justify-content: space-between; 
+align-items: center; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.viewBtn {
+  padding: 10px 22px;
+  background-color: #DB3069; 
   color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.viewBtn:hover {
+  background-color: #004975;
+  transform: translateY(-2px);
 }
 
-.App-link {
-  color: #61dafb;
+/* Dashboard view */
+.dashCont {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+.dashTitle{
+  margin: 30px;
+  color: var(--white-smoke);
+}
+.cont{
+  height: 300px;
+  width: 600px;
+  border-radius: 20px;
+  margin: 10px;
+  background-color:var(--white-smoke);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Slider Cont */
+.sliderCont {
+  width: 95%;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 30px;
+  /* background-color: var(--white-smoke); */
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
+.sImg {
+  width: 100%;
+  height: 500px;
+  max-height: 550px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+.slick-dots {
+  bottom: 15px;
+}
+
+.slick-dots li {
+  display: inline-block;
+}
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+}
+
+.slick-list {
+  border-radius: 15px;
+}
+
+
+
+
